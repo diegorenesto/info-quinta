@@ -1,0 +1,73 @@
+/* RIPASSO CSS: selettori, box-model, proprietà display */
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0; /* box-model: margine esterno */
+  padding: 0; /* box-model: spazio interno */
+}
+
+h1 {
+  color: #0074d9;
+  text-align: center;
+}
+
+.box {
+  background: white;
+  border: 2px solid #0074d9; /* box-model: bordo */
+  border-radius: 8px;
+  padding: 20px;
+  margin: 30px auto;
+  width: 300px;
+  /* Proprietà display */
+  display: block; /* default per div */
+}
+
+/* Selettore per id #speciale */
+#speciale {
+  color: #ff4136;
+  font-weight: bold;
+}
+
+ul {
+  padding: 0;
+  display: flex; /* elementi in riga */
+  justify-content: center;
+  gap: 10px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Selettore per link */
+a {
+  text-decoration: none;
+  color: #0074d9;
+}
+.btn {
+  background: #0074d9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #005fa3;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
