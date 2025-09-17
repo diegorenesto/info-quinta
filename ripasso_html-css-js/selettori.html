@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Selettori CSS</title>
+    <style>
+      h1 {
+        color: blue;
+      }
+
+      .evidenziato {
+        background: yellow;
+      }
+
+      #speciale {
+        color: red;
+      }
+
+      div p {
+        font-style: italic;
+      }
+
+      ul > li {
+        font-weight: bold;
+      }
+
+      h2 + p {
+        color: green;
+      }
+
+      a[target="_blank"] {
+        text-decoration: underline;
+      }
+
+      a:hover {
+        color: orange;
+      }
+
+      p::first-letter {
+        font-size: 200%;
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Selettore di tipo</h1>
+    <p class="evidenziato">Selettore di classe</p>
+    <p id="speciale">Selettore di ID</p>
+    <div>
+      <p>Selettore discendente (div p)</p>
+      <span>
+        <p>Altro discendente</p>
+      </span>
+    </div>
+    <ul>
+      <li>Selettore figlio (ul &gt; li)</li>
+      <li>Altro figlio</li>
+    </ul>
+    <h2>Fratello adiacente</h2>
+    <p>Questo paragrafo è selezionato da h2 + p</p>
+    <a href="https://www.example.com" target="_blank">Selettore attributo</a>
+    <a href="https://www.example.com">Link normale</a>
+    <p>Pseudo-elemento: la prima lettera di questo paragrafo è colorata.</p>
+    <h2>Che lingue conosci</h2>
+    <input type="checkbox" id="cb1" /><label for="cb1">Inglese</label><br />
+    <input type="checkbox" id="cb2" /><label for="cb2">Francese</label><br />
+
+    <h2>Che sesso sei</h2>
+    <input type="radio" name="scelta" id="r1" /><label for="r1">Maschio</label
+    ><br />
+    <input type="radio" name="scelta" id="r2" /><label for="r2">Femmina</label
+    ><br />
+  </body>
+</html>

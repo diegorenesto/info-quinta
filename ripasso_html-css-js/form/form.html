@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Personalizzato</title>
+    <link rel="stylesheet" href="style_form.css">
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Registrazione Utente</h2>
+      <form>
+        <label for="fname">Nome</label>
+        <input type="text" id="fname" name="fname" placeholder="Inserisci il tuo nome" required />
+
+        <label for="lname">Cognome</label>
+        <input type="text" id="lname" name="lname" placeholder="Inserisci il tuo cognome" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="esempio@email.com" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Crea una password" required />
+
+        <label for="tel">Telefono</label>
+        <input type="tel" id="tel" name="tel" placeholder="3271119063" pattern="[0-9]{10}" />
+
+        <label for="dob">Data di nascita</label>
+        <input type="date" id="dob" name="dob" />
+
+        <div class="radio-group">
+          <label>Genere:</label>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Maschio</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Femmina</label>
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Altro</label>
+        </div>
+
+        <label for="city">Città</label>
+        <select id="city" name="city">
+          <option value="">Seleziona la città</option>
+          <option value="torino">Rovigo</option>
+          <option value="milano">Milano</option>
+          <option value="roma">Roma</option>
+          <option value="napoli">Napoli</option>
+          <option value="torino">Torino</option>
+          <option value="altro">Altro</option>
+        </select>
+
+        <label for="message">Messaggio</label>
+        <textarea id="message" name="message" placeholder="Scrivi qui il tuo messaggio..."></textarea>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="terms" name="terms" required />
+          <label for="terms">Accetto i <a href="#" target="_blank">termini e condizioni</a></label>
+        </div>
+
+        <div class="form-actions">
+          <input type="submit" value="Invia" />
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
